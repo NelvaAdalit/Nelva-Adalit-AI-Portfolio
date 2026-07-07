@@ -3,7 +3,7 @@
 
 ¡Bienvenido/a a mi portafolio de Inteligencia Artificial! Este repositorio contiene una colección organizada de cuadernos de Jupyter (`.ipynb`) donde implemento y explico diversos algoritmos de Machine Learning y Deep Learning, desde los fundamentos matemáticos hasta redes neuronales complejas en PyTorch.
 
-La estructura del portafolio está dividida rigurosamente según los paradigmas de aprendizaje: **Supervisado**, **No Supervisado** y **Semi-supervisado**.
+La estructura del portafolio está dividida rigurosamente según los paradigmas de aprendizaje: **Supervisado**, **No Supervisado**, **Semi-supervisado** y **Por Refuerzo**.
 
 ---
 
@@ -29,6 +29,10 @@ Nelva-Adalit-AI-Portfolio/
 ├── 3-aprendizaje-semi-supervisado/
 │   └── clasificacion-frutas/
 │       └── 01_clasificacion_frutas_semisupervisado.ipynb
+├── 4-aprendizaje-por-refuerzo/
+│   └── rompecabezas-deslizante/
+│       ├── 01_aprendizaje_por_refuerzo_rompecabezas.ipynb
+│       └── pesos_rompecabezas.pt
 └── README.md
 ```
 
@@ -66,6 +70,13 @@ Modelos que combinan una pequeña cantidad de datos etiquetados con una gran can
 
 ---
 
+### 4. Aprendizaje por Refuerzo (Reinforcement Learning)
+Modelos que aprenden a tomar decisiones en un entorno interactivo mediante prueba y error, utilizando un sistema de recompensas y castigos.
+
+*   [01_aprendizaje_por_refuerzo_rompecabezas.ipynb](./4-aprendizaje-por-refuerzo/rompecabezas-deslizante/01_aprendizaje_por_refuerzo_rompecabezas.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NelvaAdalit/Nelva-Adalit-AI-Portfolio/blob/main/4-aprendizaje-por-refuerzo/rompecabezas-deslizante/01_aprendizaje_por_refuerzo_rompecabezas.ipynb): Implementación de un agente basado en gradiente de política tabular (Tabular Policy Gradient) que aprende a resolver de forma óptima el rompecabezas deslizante de 8 fichas en una cuadrícula de 3x3. Guarda las preferencias entrenadas en el archivo `pesos_rompecabezas.pt`.
+
+---
+
 ## 🚀 Tecnologías y Librerías Utilizadas
 El desarrollo de estos proyectos involucra principalmente las siguientes herramientas:
 
@@ -95,7 +106,7 @@ El desarrollo de estos proyectos involucra principalmente las siguientes herrami
 
 3.  **Instalar dependencias necesarias:**
     ```bash
-    pip install torch torchvision numpy pandas scikit-learn matplotlib seaborn jupyterlab
+    pip install torch torchvision numpy pandas scikit-learn matplotlib seaborn jupyterlab tqdm
     ```
 
 4.  **Iniciar Jupyter Lab:**
